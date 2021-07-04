@@ -126,18 +126,18 @@
             </goals>
             <configuration>
               <generatorName>jaxrs-resteasy-eap</generatorName>
-              <groupId>${project.groupId}.models</groupId>
-              <artifactId>${project.artifactId}-models</artifactId>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>${project.artifactId}</artifactId>
               <artifactVersion>${project.version}</artifactVersion>
               <templateDirectory>templates</templateDirectory>
               <output>./</output>
               <skipOverwrite>false</skipOverwrite>
-              <inputSpec>https://studio-ws.apicur.io/sharing/fb9d632f-6777-44c6-a22e-0a33d88a1d52?content=true</inputSpec>
+              <inputSpec>${openapi_app_contract_uri}</inputSpec>
               <configOptions>
                 <dateLibrary>java8-localdatetime</dateLibrary>
-                <modelPackage>${project.groupId}.models</modelPackage>
-                <invokerPackage>${project.groupId}</invokerPackage>
-                <apiPackage>${project.groupId}.api</apiPackage>
+                <modelPackage>${package}.models</modelPackage>
+                <invokerPackage>${package}</invokerPackage>
+                <apiPackage>${package}.api</apiPackage>
                 <serializableModel>true</serializableModel>
                 <sortModelPropertiesByRequiredFlag>true</sortModelPropertiesByRequiredFlag>
                 <useTags>true</useTags>
