@@ -13,7 +13,7 @@ if (!operatingSystem.contains("windows")) {
 
   Properties properties = request.properties
 
-  Path mvnWrapper = Paths.get(projectPath, "mvnw")
+  Path mvnWrapper = Paths.get(projectPath.toString(), "mvnw")
 
   Files.setPosixFilePermissions(mvnWrapper, PosixFilePermissions.fromString("rwxrwxrwx"))
 
