@@ -1,0 +1,7 @@
+pom.xml
+**/RestApplication.java
+**/*.xml
+build.gradle
+settings.gradle
+**/*Impl.java
+**/JacksonConfig.java
