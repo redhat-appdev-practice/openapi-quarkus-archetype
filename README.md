@@ -1,15 +1,15 @@
-# OpenAPI And Vert.x Bootstrap Archetype (Work In Progress)
+# OpenAPI And Quarkus Bootstrap Archetype (Work In Progress)
 
 Following a [Contract-First API Development Approach](https://bit.ly/contract-first-api)
 can be daunting depending on the tools, languages, and frameworks you might like to use.
 This [Maven Archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)
-is a quick-start for building a new OpenAPI driven application in [Eclipse Vert.x](https://vertx.io/).
+is a quick-start for building a new OpenAPI driven application in [Quarkus](https://quarkus.io/).
 
 ## Using This Archetype
 
 ```bash
 git clone https://github.com/redhat-appdev-practice/openapi-quarkus-archetype.git
-cd openapi-vertx-archetype
+cd openapi-quarkus-archetype
 mvn install
 cd <workspace>
 mvn archetype:generate -DarchetypeGroupId=com.redhat.runtimes \
