@@ -31,7 +31,7 @@
     <fileSet encoding="UTF-8">
       <directory></directory>
       <includes>
-        <include>**/*.</include>
+        <include>**/mvnw</include>
         <include>**/*.md</include>
         <include>**/*.cmd</include>
         <include>.openapi-generator-ignore</include>
