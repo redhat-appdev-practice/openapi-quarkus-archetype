@@ -32,8 +32,8 @@
       <directory></directory>
       <includes>
         <include>**/mvnw</include>
-        <include>**/*.md</include>
         <include>**/*.cmd</include>
+        <include>**/*.md</include>
         <include>.openapi-generator-ignore</include>
         <include>.gitignore</include>
         <include>.dockerignore</include>
