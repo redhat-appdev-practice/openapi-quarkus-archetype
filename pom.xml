@@ -64,7 +64,7 @@
         <configuration>
           <serverId>jboss-staging</serverId>
           <nexusUrl>https://repository.jboss.org/nexus/</nexusUrl>
-          <stagingProfileId>10e6f732f9c922</stagingProfileId>
+          <stagingProfileId>2161b7b8da0080</stagingProfileId>
         </configuration>
       </plugin>
     </plugins>
