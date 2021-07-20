@@ -65,6 +65,7 @@
           <serverId>jboss-staging</serverId>
           <nexusUrl>https://repository.jboss.org/nexus/</nexusUrl>
           <stagingProfileId>2161b7b8da0080</stagingProfileId>
+          <autoReleaseAfterClose>true</autoReleaseAfterClose>
         </configuration>
       </plugin>
     </plugins>
