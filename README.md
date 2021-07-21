@@ -8,13 +8,9 @@ is a quick-start for building a new OpenAPI driven application in [Quarkus](http
 ## Using This Archetype
 
 ```bash
-git clone https://github.com/redhat-appdev-practice/openapi-quarkus-archetype.git
-cd openapi-quarkus-archetype
-mvn install
-cd <workspace>
 mvn archetype:generate -DarchetypeGroupId=com.redhat.runtimes \
                        -DarchetypeArtifactId=openapi-quarkus-archetype \
-                       -DarchetypeVersion=1.0.0-SNAPSHOT \
+                       -DarchetypeVersion=1.0.3 \
                        -Dpackage=com.redhat.runtimes \
                        -DgroupId=com.redhat.runtimes.quarkus \
                        -DartifactId=quarkus-petstore \
