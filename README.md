@@ -8,7 +8,7 @@ is a quick-start for building a new OpenAPI driven application in [Quarkus](http
 ## Using This Archetype
 
 ```bash
-mvn archetype:generate -DarchetypeGroupId=com.redhat.runtimes \
+mvn archetype:generate -DarchetypeGroupId=com.redhat.consulting \
                        -DarchetypeArtifactId=openapi-quarkus-archetype \
                        -DarchetypeVersion=1.0.3 \
                        -Dpackage=com.redhat.runtimes \
