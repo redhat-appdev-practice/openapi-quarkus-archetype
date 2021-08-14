@@ -127,16 +127,16 @@
               <goal>generate</goal>
             </goals>
             <configuration>
-              <generatorName>jaxrs-resteasy-eap</generatorName>
+              <generatorName>jaxrs-spec</generatorName>
+              <library>quarkus</library>
               <groupId>${project.groupId}</groupId>
               <artifactId>${project.artifactId}</artifactId>
               <artifactVersion>${project.version}</artifactVersion>
-              <templateDirectory>templates</templateDirectory>
-              <output>./</output>
+              <output>${project.basedir}</output>
               <skipOverwrite>false</skipOverwrite>
               <inputSpec>${openapi_app_contract_uri}</inputSpec>
               <configOptions>
-                <dateLibrary>java8-localdatetime</dateLibrary>
+                <dateLibrary>java8</dateLibrary>
                 <modelPackage>${package}.models</modelPackage>
                 <invokerPackage>${package}</invokerPackage>
                 <apiPackage>${package}.api</apiPackage>
@@ -144,8 +144,11 @@
                 <sortModelPropertiesByRequiredFlag>true</sortModelPropertiesByRequiredFlag>
                 <useTags>true</useTags>
                 <java8>true</java8>
+                <useSwaggerAnnotations>false</useSwaggerAnnotations>
+                <interfaceOnly>true</interfaceOnly>
+                <openApiSpecFileLocation>src/main/resources/openapi.yml</openApiSpecFileLocation>
                 <sourceFolder>src/gen/java</sourceFolder>
-                <generateJbossDeploymentDescriptor>false</generateJbossDeploymentDescriptor>
+                <additionalModelTypeAnnotations>@javax.persistence.Entity</additionalModelTypeAnnotations>
               </configOptions>
             </configuration>
           </execution>

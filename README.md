@@ -10,7 +10,7 @@ is a quick-start for building a new OpenAPI driven application in [Quarkus](http
 ```bash
 mvn archetype:generate -DarchetypeGroupId=com.redhat.consulting \
                        -DarchetypeArtifactId=openapi-quarkus-archetype \
-                       -DarchetypeVersion=1.0.3 \
+                       -DarchetypeVersion=1.0.4 \
                        -Dpackage=com.redhat.runtimes \
                        -DgroupId=com.redhat.runtimes.quarkus \
                        -DartifactId=quarkus-petstore \
@@ -39,7 +39,9 @@ mvn archetype:generate -DarchetypeGroupId=com.redhat.consulting \
 
 - Integrates OpenAPI Generator via Maven Plugin
 - Generates JPA Entity classes from the OpenAPI contract
-- Generates API Interfaces with JAX-RS/RestEasy annotations
+  - Uses the OpenAPI Generator configuration option `additionalModelTypeAnnotations` to add `@javax.persistence.Entity` on each Model
+  - Uses `x-extra-annotation` on Model fields to add JPA annotations to getters
+- Generates API Interfaces with JAX-RS annotations
 
 ## Forthcoming Features
 
