@@ -40,11 +40,11 @@ mvn archetype:generate -DarchetypeGroupId=com.redhat.consulting \
 - Integrates OpenAPI Generator via Maven Plugin
 - Generates JPA Entity classes from the OpenAPI contract
   - See the custom template instructions [HERE](https://github.com/redhat-appdev-practice/openapi-generator-quarkus-templates)
+- Allow you to choose between Hibernate and Hibernate Reactive
 - Generates API Interfaces with JAX-RS annotations
 
 ## Forthcoming Features
 
-- Allow you to choose between Hibernate and Hibernate Reactive
 - Allow you to choose between Panache ActiveRecord and Panache Repository
 - Allow you to choose between RestEasy and RestEasy Reactive
 - Add your idea to the GitHub issues!!!
