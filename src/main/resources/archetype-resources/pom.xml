@@ -32,7 +32,7 @@
   <dependencies>
     <dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-hibernate-reactive-panache</artifactId>
+      <artifactId>quarkus-${quarkus_orm_selection}-panache</artifactId>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
@@ -135,6 +135,7 @@
               <output>${project.basedir}</output>
               <skipOverwrite>false</skipOverwrite>
               <inputSpec>${openapi_app_contract_uri}</inputSpec>
+              <templateDirectory>${project.basedir}/templates</templateDirectory>
               <configOptions>
                 <dateLibrary>java8</dateLibrary>
                 <modelPackage>${package}.models</modelPackage>
@@ -148,7 +149,6 @@
                 <interfaceOnly>true</interfaceOnly>
                 <openApiSpecFileLocation>src/main/resources/openapi.yml</openApiSpecFileLocation>
                 <sourceFolder>src/gen/java</sourceFolder>
-                <additionalModelTypeAnnotations>@javax.persistence.Entity</additionalModelTypeAnnotations>
               </configOptions>
             </configuration>
           </execution>
