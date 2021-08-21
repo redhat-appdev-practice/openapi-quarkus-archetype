@@ -39,8 +39,7 @@ mvn archetype:generate -DarchetypeGroupId=com.redhat.consulting \
 
 - Integrates OpenAPI Generator via Maven Plugin
 - Generates JPA Entity classes from the OpenAPI contract
-  - Uses the OpenAPI Generator configuration option `additionalModelTypeAnnotations` to add `@javax.persistence.Entity` on each Model
-  - Uses `x-extra-annotation` on Model fields to add JPA annotations to getters
+  - See the custom template instructions [HERE](https://github.com/redhat-appdev-practice/openapi-generator-quarkus-templates)
 - Generates API Interfaces with JAX-RS annotations
 
 ## Forthcoming Features
