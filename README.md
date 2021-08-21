@@ -51,5 +51,5 @@ mvn archetype:generate -DarchetypeGroupId=com.redhat.consulting \
 
 ## FAQ
 
-- Whay are there no OpenAPI/Swagger annotations in the generated code?
-  - I'm still working on getting a proper Quarkus generator in the upstream OpenAPI Generator, so in the meantime I have had to make compromises
+- Why are there no OpenAPI/Swagger annotations in the generated code?
+  - The current JAXRS-Spec+Quarkus generator uses `quarkus-smallrye-openapi` and thus it does not need Swagger/OpenAPI Annotations. IT will reconcile the OpenAPI Spec file with the code to provide a unified view.
