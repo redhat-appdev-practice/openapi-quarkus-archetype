@@ -147,7 +147,6 @@
                 <java8>true</java8>
                 <useSwaggerAnnotations>false</useSwaggerAnnotations>
                 <interfaceOnly>true</interfaceOnly>
-                <openApiSpecFileLocation>src/main/resources/openapi.yml</openApiSpecFileLocation>
                 <sourceFolder>src/gen/java</sourceFolder>
               </configOptions>
             </configuration>

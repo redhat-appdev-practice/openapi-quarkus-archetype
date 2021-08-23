@@ -10,7 +10,7 @@ is a quick-start for building a new OpenAPI driven application in [Quarkus](http
 ```bash
 mvn archetype:generate -DarchetypeGroupId=com.redhat.consulting \
                        -DarchetypeArtifactId=openapi-quarkus-archetype \
-                       -DarchetypeVersion=1.0.5 \
+                       -DarchetypeVersion=1.0.6 \
                        -Dpackage=com.redhat.runtimes \
                        -DgroupId=com.redhat.runtimes.quarkus \
                        -DartifactId=quarkus-petstore \
