@@ -5,6 +5,20 @@ can be daunting depending on the tools, languages, and frameworks you might like
 This [Maven Archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)
 is a quick-start for building a new OpenAPI driven application in [Quarkus](https://quarkus.io/).
 
+## Hacktoberfest Participants
+
+If you would like to submit a pull against this repository and have it count toward Hacktoberfest, please be aware that this is what we are looking for:
+
+* Improvements to the archetype:
+  * Better or more idomatic workflow (Subjective and at the discretion of our team to decide if wanted)
+  * Fixes to spelling
+  * Updated or improved tooling
+
+In order to avoid wasting your time and ours, it is recommended that you submit an issue describing your contribution first.
+
+**Thank you! And happy hacking!!**
+
+
 ## Using This Archetype
 
 ```bash
