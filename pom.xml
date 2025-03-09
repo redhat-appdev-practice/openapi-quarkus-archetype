@@ -4,11 +4,11 @@
 
   <groupId>com.redhat.consulting</groupId>
   <artifactId>openapi-quarkus-archetype</artifactId>
-  <version>1.0.9-SNAPSHOT</version>
+  <version>2.0.0-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <name>openapi-quarkus-archetype</name>
-  
+
   <description>OpenAPI And Quarkus Bootstrap Archetype</description>
   <url>https://github.com/redhat-appdev-practice/openapi-quarkus-archetype</url>
 
@@ -21,7 +21,7 @@
       <comments>At least one license must be present. Here is an example of ASL v. 2.0</comments>
     </license>
   </licenses>
-  
+
   <!-- Source code management information is mandatory as well.-->
   <scm>
     <connection>scm:git:git@github.com:redhat-appdev-practice/openapi-quarkus-archetype.git</connection>
@@ -29,7 +29,7 @@
     <developerConnection>scm:git:https://github.com/redhat-appdev-practice/openapi-quarkus-archetype.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
-  
+
   <!-- At least one developer should be mentioned -->
   <developers>
     <developer>
@@ -38,7 +38,7 @@
       <organization>Red Hat</organization>
     </developer>
   </developers>
-  
+
   <build>
     <extensions>
       <extension>

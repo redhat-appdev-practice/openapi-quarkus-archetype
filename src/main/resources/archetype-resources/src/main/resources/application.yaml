@@ -1,4 +1,6 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-quarkus.oidc.auth-server-url=https://oidc.example.com/auth/realm/client
+quarkus:
+  rest:
+    path: /api/v1
