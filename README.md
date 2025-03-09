@@ -24,7 +24,7 @@ In order to avoid wasting your time and ours, it is recommended that you submit 
 ```bash
 mvn archetype:generate -DarchetypeGroupId=com.redhat.consulting \
                        -DarchetypeArtifactId=openapi-quarkus-archetype \
-                       -DarchetypeVersion=1.0.6 \
+                       -DarchetypeVersion=1.0.9 \
                        -Dpackage=com.redhat.runtimes \
                        -DgroupId=com.redhat.runtimes.quarkus \
                        -DartifactId=quarkus-petstore \
