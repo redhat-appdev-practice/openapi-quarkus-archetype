@@ -12,6 +12,10 @@
   <description>OpenAPI And Quarkus Bootstrap Archetype</description>
   <url>https://github.com/redhat-appdev-practice/openapi-quarkus-archetype</url>
 
+  <properties>
+    <nexus.staging.url>https://repository.jboss.org/nexus/</nexus.staging.url>
+  </properties>
+
   <!-- License must be present-->
   <licenses>
     <license>
@@ -62,24 +66,16 @@
         <artifactId>nexus-staging-maven-plugin</artifactId>
         <version>1.6.8</version>
         <extensions>true</extensions>
-        <configuration>
-          <serverId>jboss-staging</serverId>
-          <nexusUrl>https://repository.jboss.org/nexus/</nexusUrl>
-          <stagingProfileId>2161b7b8da0080</stagingProfileId>
-          <autoReleaseAfterClose>true</autoReleaseAfterClose>
-        </configuration>
-        <dependencies>
-          <!--
-            TODO:
-              Remove after OSSRH-66257, NEXUS-26993 are fixed,
-              possibly via https://github.com/sonatype/nexus-maven-plugins/pull/91
-          -->
-          <dependency>
-            <groupId>com.thoughtworks.xstream</groupId>
-            <artifactId>xstream</artifactId>
-            <version>1.4.15</version>
-          </dependency>
-        </dependencies>
+        <executions>
+          <execution>
+            <configuration>
+              <serverId>jboss-staging</serverId>
+              <nexusUrl>${nexus.staging.url}</nexusUrl>
+              <stagingProfileId>2161b7b8da0080</stagingProfileId>
+              <autoReleaseAfterClose>true</autoReleaseAfterClose>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
